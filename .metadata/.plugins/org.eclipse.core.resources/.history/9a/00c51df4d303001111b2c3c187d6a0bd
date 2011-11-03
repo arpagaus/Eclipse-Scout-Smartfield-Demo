@@ -1,0 +1,21 @@
+package com.bsiag.smartfield.server.services.custom.lucene.indexwriter;
+
+import java.io.IOException;
+
+import org.eclipse.scout.rt.shared.services.common.file.RemoteFile;
+import org.eclipse.scout.service.AbstractService;
+
+import com.bsiag.smartfield.shared.services.custom.lucene.indexwriter.IIndexWriterService;
+
+public class IndexWriterService extends AbstractService implements IIndexWriterService {
+
+  public void createZipIndex(RemoteFile file) {
+    try {
+      System.out.println(file.extractData().length);
+    }
+    catch (IOException e) {
+      // TODO Auto-generated catch block
+      e.printStackTrace();
+    }
+  }
+}

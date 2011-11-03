@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.pde.ui.RuntimeWorkbench">
+<booleanAttribute key="append.args" value="true"/>
+<stringAttribute key="application" value="com.bsiag.smartfield.server.app"/>
+<booleanAttribute key="askclear" value="true"/>
+<booleanAttribute key="automaticAdd" value="false"/>
+<booleanAttribute key="clearws" value="false"/>
+<booleanAttribute key="clearwslog" value="false"/>
+<booleanAttribute key="default" value="false"/>
+<stringAttribute key="location" value="${workspace_loc}/../runtime-smartfield-server.product"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="-os ${target.os} -ws ${target.ws} -arch ${target.arch} -nl ${target.nl} -consoleLog"/>
+<stringAttribute key="org.eclipse.jdt.launching.SOURCE_PATH_PROVIDER" value="org.eclipse.pde.ui.workbenchClasspathProvider"/>
+<stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-Dosgi.requiredJavaVersion=1.5 -Xms40m -Xmx512m -Xms64m -XX:MaxPermSize=256m"/>
+<stringAttribute key="pde.version" value="3.3"/>
+<stringAttribute key="product" value="com.bsiag.smartfield.server.product"/>
+<stringAttribute key="productFile" value="\com.bsiag.smartfield.server\products\production\smartfield-server.product"/>
+<stringAttribute key="selected_target_plugins" value="org.eclipse.core.runtime@default:default,org.apache.commons.codec@default:default,org.eclipse.equinox.common@default:default,org.eclipse.equinox.http.servlet@default:default,org.eclipse.equinox.security@default:default,org.eclipse.scout.http.servletfilter@default:default,org.eclipse.core.contenttype@default:default,javax.servlet@default:default,org.eclipse.scout.service@default:default,org.eclipse.equinox.preferences@default:default,org.eclipse.scout.rt.jdbc.derby@default:default,org.eclipse.scout.rt.server@default:default,org.eclipse.equinox.registry@default:default,org.eclipse.scout.commons@default:default,org.eclipse.equinox.http.registry@default:default,org.eclipse.osgi@default:default,org.eclipse.equinox.http.servletbridge@default:default,org.eclipse.core.jobs@default:default,org.eclipse.core.runtime.compatibility.registry@default:default,org.eclipse.equinox.servletbridge@default:default,org.eclipse.equinox.app@default:default,org.eclipse.osgi.services@default:default,org.eclipse.scout.rt.shared@default:default,org.eclipse.update.configurator@default:default,,org.eclipse.core.contenttype,org.eclipse.core.jobs,org.eclipse.equinox.common,org.eclipse.equinox.preferences,org.eclipse.equinox.registry,org.eclipse.core.runtime.compatibility.registry,org.eclipse.equinox.app"/>
+<stringAttribute key="selected_workspace_plugins" value="com.bsiag.smartfield.shared@default:default,com.bsiag.smartfield.server@default:default,"/>
+<stringAttribute key="templateConfig" value="C:\data\workspaces\tmp\com.bsiag.smartfield.server\products\production\config.ini"/>
+<booleanAttribute key="useDefaultConfig" value="false"/>
+<booleanAttribute key="useProduct" value="true"/>
+<booleanAttribute key="usefeatures" value="false"/>
+</launchConfiguration>

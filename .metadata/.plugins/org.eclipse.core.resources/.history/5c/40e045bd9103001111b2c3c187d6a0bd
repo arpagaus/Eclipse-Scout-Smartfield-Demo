@@ -1,0 +1,30 @@
+package com.bsiag.smartfield.server.services.lookup;
+
+import org.eclipse.scout.rt.server.services.lookup.AbstractLookupService;
+import com.bsiag.smartfield.shared.services.lookup.ILanguageLookupService;
+import org.eclipse.scout.rt.shared.services.lookup.LookupRow;
+import org.eclipse.scout.commons.exception.ProcessingException;
+import org.eclipse.scout.rt.shared.services.lookup.LookupCall;
+
+public class LanguageLookupService extends AbstractLookupService implements ILanguageLookupService{
+
+  public LookupRow[] getDataByAll(LookupCall call) throws ProcessingException {
+    //TODO [rar] Auto-generated method stub
+    return null;
+  }
+
+  public LookupRow[] getDataByKey(LookupCall call) throws ProcessingException{
+    //TODO [rar] Auto-generated method stub
+    return null;
+  }
+
+  public LookupRow[] getDataByRec(LookupCall call) throws ProcessingException{
+    //TODO [rar] Auto-generated method stub
+    return null;
+  }
+
+  public LookupRow[] getDataByText(LookupCall call) throws ProcessingException{
+    //TODO [rar] Auto-generated method stub
+    return null;
+  }
+}

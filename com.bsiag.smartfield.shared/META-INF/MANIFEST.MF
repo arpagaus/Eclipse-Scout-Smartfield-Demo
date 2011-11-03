@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: com.bsiag.smartfield.shared
+Bundle-SymbolicName: com.bsiag.smartfield.shared;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: com.bsiag.smartfield.shared.Activator
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Require-Bundle: org.eclipse.core.runtime,
+ org.eclipse.scout.rt.shared;visibility:=reexport
+Export-Package: com.bsiag.smartfield.shared,
+ com.bsiag.smartfield.shared.services.process,
+ com.bsiag.smartfield.shared.services.lookup,
+ com.bsiag.smartfield.shared.services.custom.lucene.indexwriter

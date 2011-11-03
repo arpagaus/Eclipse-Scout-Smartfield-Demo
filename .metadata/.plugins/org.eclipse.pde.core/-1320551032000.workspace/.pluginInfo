@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map>
+	<bundle bundleID="437" class="com.bsiag.smartfield.ui.swt.Activator" localization="OSGI-INF/l10n/bundle" name="My Application" project="com.bsiag.smartfield.ui.swt">
+		<library name="."/>
+	</bundle>
+	<bundle bundleID="439" class="com.bsiag.smartfield.client.Activator" localization="OSGI-INF/l10n/bundle" name="com.bsiag.smartfield.client" project="com.bsiag.smartfield.client"/>
+	<bundle bundleID="438" class="com.bsiag.smartfield.server.Activator" localization="OSGI-INF/l10n/bundle" name="com.bsiag.smartfield.server" project="com.bsiag.smartfield.server">
+		<library name="."/>
+		<library name="lib/lucene-core-3.4.0.jar"/>
+	</bundle>
+	<bundle bundleID="440" class="com.bsiag.smartfield.ui.swing.Activator" localization="OSGI-INF/l10n/bundle" name="My Application" project="com.bsiag.smartfield.ui.swing">
+		<library name="."/>
+	</bundle>
+	<bundle bundleID="441" class="com.bsiag.smartfield.shared.Activator" localization="OSGI-INF/l10n/bundle" name="com.bsiag.smartfield.shared" project="com.bsiag.smartfield.shared"/>
+</map>

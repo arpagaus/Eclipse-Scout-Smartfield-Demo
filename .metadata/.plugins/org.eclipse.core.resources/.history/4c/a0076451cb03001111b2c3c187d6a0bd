@@ -1,0 +1,43 @@
+package com.bsiag.smartfield.server.services.lookup;
+
+import java.util.Locale;
+import java.util.TreeSet;
+
+import org.eclipse.scout.commons.exception.ProcessingException;
+import org.eclipse.scout.rt.server.services.lookup.AbstractLookupService;
+import org.eclipse.scout.rt.shared.services.lookup.LookupCall;
+import org.eclipse.scout.rt.shared.services.lookup.LookupRow;
+import org.osgi.framework.ServiceRegistration;
+
+import com.bsiag.smartfield.shared.services.lookup.ILocaleLookupService;
+
+public class LocaleLookupService extends AbstractLookupService implements ILocaleLookupService{
+
+  TreeSet<LookupRow> cache=new TreeSet<LookupRow>();
+  
+  @Override
+  public void initializeService(ServiceRegistration registration) {
+    super.initializeService(registration);
+    
+    for(Locale l: Locale.getAvailableLocales()){
+      cache.add(new LookupRow(l.getVariant(), l.getDisplayName()))
+    }
+  }
+  
+  public LookupRow[] getDataByKey(LookupCall call) throws ProcessingException {
+    return null;
+  }
+
+  public LookupRow[] getDataByText(LookupCall call) throws ProcessingException {
+    return null;
+  }
+
+  public LookupRow[] getDataByAll(LookupCall call) throws ProcessingException {
+    return null;
+  }
+
+  public LookupRow[] getDataByRec(LookupCall call) throws ProcessingException {
+    return null;
+  }
+  
+}

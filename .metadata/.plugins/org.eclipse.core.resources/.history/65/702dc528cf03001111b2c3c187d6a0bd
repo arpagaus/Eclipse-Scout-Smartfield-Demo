@@ -1,0 +1,135 @@
+/*******************************************************************************
+ * Copyright (c) 2010 BSI Business Systems Integration AG.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
+ *
+ * Contributors:
+ *     BSI Business Systems Integration AG - initial API and implementation
+ ******************************************************************************/
+package com.bsiag.smartfield.client.ui.desktop;
+
+import java.io.File;
+import java.net.MalformedURLException;
+
+import org.eclipse.scout.commons.annotations.Order;
+import org.eclipse.scout.commons.exception.ProcessingException;
+import org.eclipse.scout.commons.logger.IScoutLogger;
+import org.eclipse.scout.commons.logger.ScoutLogManager;
+import org.eclipse.scout.rt.client.ClientSyncJob;
+import org.eclipse.scout.rt.client.ui.action.menu.AbstractMenu;
+import org.eclipse.scout.rt.client.ui.basic.filechooser.FileChooser;
+import org.eclipse.scout.rt.client.ui.desktop.AbstractDesktop;
+import org.eclipse.scout.rt.client.ui.desktop.IDesktop;
+import org.eclipse.scout.rt.client.ui.desktop.bookmark.menu.AbstractBookmarkMenu;
+import org.eclipse.scout.rt.client.ui.form.ScoutInfoForm;
+import org.eclipse.scout.rt.shared.services.common.file.RemoteFile;
+
+import com.bsiag.smartfield.client.ClientSession;
+import com.bsiag.smartfield.client.ui.forms.DesktopForm;
+import com.bsiag.smartfield.shared.Texts;
+
+public class Desktop extends AbstractDesktop implements IDesktop {
+  private static IScoutLogger logger = ScoutLogManager.getLogger(Desktop.class);
+
+  public Desktop() {
+  }
+
+  @Override
+  public String getConfiguredTitle() {
+    return Texts.get("ApplicationTitle");
+  }
+
+  @Override
+  protected void execOpened() throws ProcessingException {
+    // dektop form
+    DesktopForm desktopForm = new DesktopForm();
+    desktopForm.startView();
+  }
+
+  @Order(10.0)
+  public class FileMenu extends AbstractMenu {
+
+    @Override
+    public String getConfiguredText() {
+      return Texts.get("FileMenu");
+    }
+
+    @Order(100.0)
+    public class ExitMenu extends AbstractMenu {
+
+      @Override
+      public String getConfiguredText() {
+        return Texts.get("ExitMenu");
+      }
+
+      @Override
+      public void execAction() throws ProcessingException {
+        ClientSyncJob.getCurrentSession(ClientSession.class).stopSession();
+      }
+    }
+  }
+
+  @Order(20.0)
+  public class ToolsMenu extends AbstractMenu {
+
+    @Override
+    public String getConfiguredText() {
+      return Texts.get("ToolsMenu");
+    }
+
+    @Order(10.0)
+    public class CreateZipIndex_Menu extends AbstractMenu {
+
+      @Override
+      protected String getConfiguredText() {
+        return Texts.get("CreateZipIndex_");
+      }
+
+      @Override
+      protected void execAction() throws ProcessingException {
+        File[] f = new FileChooser().startChooser();
+        try {
+          RemoteFile file = new RemoteFile(f[0].toURI().toURL(), true);
+        }
+        catch (MalformedURLException e) {
+          throw new ProcessingException("", e);
+        }
+      }
+    }
+  }
+
+  @Order(25)
+  public class BookmarkMenu extends AbstractBookmarkMenu {
+    public BookmarkMenu() {
+      super(Desktop.this);
+    }
+  }
+
+  @Order(30.0)
+  public class HelpMenu extends AbstractMenu {
+
+    @Override
+    public String getConfiguredText() {
+      return Texts.get("HelpMenu");
+    }
+
+    @Order(10.0)
+    public class AboutMenu extends AbstractMenu {
+
+      @Override
+      public String getConfiguredText() {
+        return Texts.get("AboutMenu");
+      }
+
+      @Override
+      public void execAction() throws ProcessingException {
+        ScoutInfoForm form = new ScoutInfoForm();
+        form.startModify();
+      }
+    }
+
+  }
+
+}

@@ -1,0 +1,24 @@
+/*******************************************************************************
+ * Copyright (c) 2010 BSI Business Systems Integration AG.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
+ * 
+ * Contributors:
+ *     BSI Business Systems Integration AG - initial API and implementation
+ ******************************************************************************/
+package com.bsiag.smartfield.shared.services.lookup;
+
+import org.eclipse.scout.rt.shared.services.lookup.ILookupService;
+import org.eclipse.scout.rt.shared.services.lookup.LookupCall;
+
+public class CityLookupCall extends LookupCall {
+  private static final long serialVersionUID = 1L;
+
+  @Override
+  protected Class<? extends ILookupService> getConfiguredService() {
+    return ICityLookupService.class;
+  }
+
+}

@@ -1,0 +1,7 @@
+package com.bsiag.smartfield.server.services.lookup;
+
+import org.eclipse.scout.rt.server.services.lookup.AbstractLookupService;
+import com.bsiag.smartfield.shared.services.lookup.ICityLookupService;
+
+public class CityLookupService extends AbstractLookupService implements ICityLookupService{
+}

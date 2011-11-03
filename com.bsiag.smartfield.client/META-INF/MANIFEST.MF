@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: com.bsiag.smartfield.client
+Bundle-SymbolicName: com.bsiag.smartfield.client;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: com.bsiag.smartfield.client.Activator
+Bundle-ActivationPolicy: lazy
+Require-Bundle: org.eclipse.core.runtime,
+ org.eclipse.scout.rt.client;visibility:=reexport,
+ com.bsiag.smartfield.shared
+Export-Package: com.bsiag.smartfield.client,
+ com.bsiag.smartfield.client.ui.desktop,
+ com.bsiag.smartfield.client.ui.forms
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6

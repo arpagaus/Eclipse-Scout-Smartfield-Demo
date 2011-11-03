@@ -1,0 +1,7 @@
+package com.bsiag.smartfield.server.services.custom.lucene.indexwriter;
+
+import com.bsiag.smartfield.shared.services.custom.lucene.indexwriter.IIndexWriterService;
+import org.eclipse.scout.service.AbstractService;
+
+public class IndexWriterService extends AbstractService implements IIndexWriterService{
+}

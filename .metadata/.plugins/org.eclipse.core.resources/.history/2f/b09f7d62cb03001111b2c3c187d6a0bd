@@ -1,0 +1,12 @@
+package com.bsiag.smartfield.server.services.lookup;
+
+import java.util.Locale;
+import java.util.TreeSet;
+
+import org.eclipse.scout.commons.exception.ProcessingException;
+import org.eclipse.scout.rt.server.services.lookup.AbstractLookupService;
+import org.eclipse.scout.rt.shared.services.lookup.LookupCall;
+import org.eclipse.scout.rt.shared.services.lookup.LookupRow;
+import org.osgi.framework.ServiceRegistration;
+
+import com.bsiag.smartfield.shared.services.lookup.ILocaleLookupService;

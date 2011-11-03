@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+  <extension id="app" name="Application" point="org.eclipse.core.runtime.applications">
+    <application>
+      <run class="com.bsiag.smartfield.ui.swing.SwingApplication"/>
+    </application>
+  </extension>
+  <extension id="product" point="org.eclipse.core.runtime.products">
+    <product
+          application="com.bsiag.smartfield.ui.swing.app"
+          name="smartfield">
+       <property
+             name="appName"
+             value="smartfield">
+       </property>
+    </product>
+  </extension>
+</plugin>

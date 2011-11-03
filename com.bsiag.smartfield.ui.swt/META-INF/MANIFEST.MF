@@ -1,0 +1,24 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: My Application
+Bundle-SymbolicName: com.bsiag.smartfield.ui.swt;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: com.bsiag.smartfield.ui.swt.Activator
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Require-Bundle: com.bsiag.smartfield.client;visibility:=reexport,
+ com.bsiag.smartfield.shared,
+ org.eclipse.scout.rt.ui.swt,
+ org.eclipse.scout.net,
+ org.eclipse.equinox.app,
+ org.eclipse.core.runtime,
+ org.eclipse.ui,
+ org.eclipse.ui.views
+Export-Package: com.bsiag.smartfield.ui.swt;uses:="org.eclipse.scout.rt.ui.swt,
+ org.eclipse.scout.rt.client.session,
+ org.osgi.framework",
+ com.bsiag.smartfield.ui.swt,
+ com.bsiag.smartfield.ui.swt.perspective,
+ com.bsiag.smartfield.ui.swt.views,
+ com.bsiag.smartfield.ui.swt.application
+Bundle-ClassPath: .

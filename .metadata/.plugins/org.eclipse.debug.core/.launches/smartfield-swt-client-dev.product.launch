@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.pde.ui.RuntimeWorkbench">
+<booleanAttribute key="append.args" value="true"/>
+<stringAttribute key="application" value="com.bsiag.smartfield.ui.swt.application"/>
+<booleanAttribute key="askclear" value="true"/>
+<booleanAttribute key="automaticAdd" value="false"/>
+<booleanAttribute key="clearws" value="false"/>
+<booleanAttribute key="clearwslog" value="false"/>
+<booleanAttribute key="default" value="false"/>
+<stringAttribute key="location" value="${workspace_loc}/../runtime-smartfield-swt-client-dev.product"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="-os ${target.os} -ws ${target.ws} -arch ${target.arch} -nl ${target.nl} -consoleLog"/>
+<stringAttribute key="org.eclipse.jdt.launching.SOURCE_PATH_PROVIDER" value="org.eclipse.pde.ui.workbenchClasspathProvider"/>
+<stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-Dosgi.requiredJavaVersion=1.5 -Xms40m -Xmx512m -Xms64m -XX:MaxPermSize=256m"/>
+<stringAttribute key="pde.version" value="3.3"/>
+<stringAttribute key="product" value="com.bsiag.smartfield.ui.swt.product"/>
+<stringAttribute key="productFile" value="\com.bsiag.smartfield.ui.swt\products\development\smartfield-swt-client-dev.product"/>
+<stringAttribute key="selected_target_plugins" value="org.eclipse.jface.text@default:default,org.eclipse.core.databinding.property@default:default,org.eclipse.core.runtime@default:default,org.eclipse.core.databinding@default:default,org.eclipse.ui.views@default:default,org.eclipse.scout.rt.ui.swt@default:default,org.eclipse.core.filebuffers@default:default,org.eclipse.equinox.common@default:default,org.eclipse.scout.rt.client@default:default,org.eclipse.core.commands@default:default,org.eclipse.ui.forms@default:default,org.eclipse.equinox.security@default:default,org.eclipse.ui.workbench.texteditor@default:default,org.eclipse.core.contenttype@default:default,org.eclipse.help@default:default,org.eclipse.jface@default:default,org.eclipse.core.filesystem@default:default,org.eclipse.scout.service@default:default,org.eclipse.core.resources@default:default,org.eclipse.equinox.preferences@default:default,org.eclipse.jface.databinding@default:default,org.eclipse.core.runtime.compatibility.auth@default:default,org.eclipse.scout.net@default:default,org.eclipse.core.net@default:default,org.eclipse.core.databinding.observable@default:default,org.eclipse.equinox.registry@default:default,org.eclipse.scout.commons@default:default,org.eclipse.swt@default:default,org.eclipse.osgi@default:default,org.eclipse.ui@default:default,org.eclipse.compare.core@default:default,org.eclipse.ui.workbench@default:default,org.eclipse.core.jobs@default:default,org.eclipse.core.expressions@default:default,org.eclipse.text@default:default,com.ibm.icu@default:default,org.eclipse.swt.win32.win32.x86@default:default,org.eclipse.core.runtime.compatibility.registry@default:default,org.eclipse.scout.rt.shared@default:default,org.eclipse.osgi.services@default:default,org.eclipse.equinox.app@default:default,org.eclipse.update.configurator@default:default,"/>
+<stringAttribute key="selected_workspace_plugins" value="com.bsiag.smartfield.ui.swt@default:default,com.bsiag.smartfield.shared@default:default,com.bsiag.smartfield.client@default:default,"/>
+<stringAttribute key="templateConfig" value="C:\data\workspaces\smartfield-example\com.bsiag.smartfield.ui.swt\products\development\config.ini"/>
+<booleanAttribute key="useDefaultConfig" value="false"/>
+<booleanAttribute key="useProduct" value="true"/>
+<booleanAttribute key="usefeatures" value="false"/>
+</launchConfiguration>

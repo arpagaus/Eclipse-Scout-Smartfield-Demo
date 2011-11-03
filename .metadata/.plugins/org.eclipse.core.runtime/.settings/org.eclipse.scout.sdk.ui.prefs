@@ -1,0 +1,3 @@
+#Tue Nov 01 17:23:36 CET 2011
+section.productLauncher_com.bsiag.smartfield=/com.bsiag.smartfield.ui.swt/products/development/smartfield-swt-client-dev.product,/com.bsiag.smartfield.ui.swing/products/development/smartfield-swing-client-dev.product,/com.bsiag.smartfield.server/products/development/smartfield-server-dev.product
+eclipse.preferences.version=1

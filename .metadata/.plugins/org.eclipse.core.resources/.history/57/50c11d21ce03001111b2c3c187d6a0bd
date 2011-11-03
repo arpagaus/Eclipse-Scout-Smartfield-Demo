@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+  <extension point="org.eclipse.scout.service.services">
+    <proxy class="com.bsiag.smartfield.shared.services.process.IDesktopProcessService" factory="org.eclipse.scout.rt.client.services.ClientProxyServiceFactory"/>
+    <proxy class="com.bsiag.smartfield.shared.services.lookup.ILanguageLookupService" factory="org.eclipse.scout.rt.client.services.ClientProxyServiceFactory"/>
+    <proxy class="com.bsiag.smartfield.shared.services.lookup.ILocaleLookupService" factory="org.eclipse.scout.rt.client.services.ClientProxyServiceFactory"/>
+  </extension>
+  <extension point="org.eclipse.scout.service.services">
+  </extension>
+</plugin>

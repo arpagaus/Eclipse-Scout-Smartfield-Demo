@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+<typeInfo handle="=com.bsiag.smartfield.ui.swing/src&lt;com.bsiag.smartfield.ui.swing{SwingEnvironment.java[SwingEnvironment" modifiers="1" timestamp="1320167152253"/>
+<typeInfo handle="=com.bsiag.smartfield.server/C:\/bin\/eclipses\/eclipse-scout-indigo-win32\/plugins\/org.eclipse.scout.rt.server_3.7.0.201106070527.jar&lt;org.eclipse.scout.rt.server.services.lookup(AbstractLookupService.class[AbstractLookupService" modifiers="1057" timestamp="1308108872000"/>
+<typeInfo handle="=com.bsiag.smartfield.server/src&lt;com.bsiag.smartfield.server.services.lookup{CityLookupService.java[CityLookupService" modifiers="1" timestamp="1320099997651"/>
+<typeInfo handle="=com.bsiag.smartfield.server/src&lt;com.bsiag.smartfield.server.services.lookup{LanguageLookupService.java[LanguageLookupService" modifiers="1" timestamp="1320070527449"/>
+<typeInfo handle="=com.bsiag.smartfield.client/src&lt;com.bsiag.smartfield.client.ui.forms{DesktopForm.java[DesktopForm" modifiers="1" timestamp="1320245005239"/>
+</typeInfoHistroy>

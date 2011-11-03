@@ -1,0 +1,52 @@
+package com.bsiag.smartfield.server.services.lookup;
+
+import java.util.HashMap;
+import java.util.Locale;
+import java.util.Map;
+
+import org.eclipse.scout.commons.exception.ProcessingException;
+import org.eclipse.scout.rt.server.services.lookup.AbstractLookupService;
+import org.eclipse.scout.rt.shared.services.lookup.LookupCall;
+import org.eclipse.scout.rt.shared.services.lookup.LookupRow;
+import org.osgi.framework.ServiceRegistration;
+
+import com.bsiag.smartfield.shared.services.lookup.ILanguageLookupService;
+
+public class LanguageLookupService extends AbstractLookupService implements ILanguageLookupService {
+
+  Map<String, LookupRow> cache = new HashMap<String, LookupRow>();
+
+  @Override
+  public void initializeService(ServiceRegistration registration) {
+    super.initializeService(registration);
+
+    for (Locale l : Locale.getAvailableLocales()) {
+      if (l.getCountry() == null) {
+        cache.put(l.getLanguage(), new LookupRow(l.getLanguage(), l.getDisplayName()));
+      }
+    }
+  }
+
+  public LookupRow[] getDataByAll(LookupCall call) throws ProcessingException {
+    return cache.values().toArray(new LookupRow[0]);
+  }
+
+  public LookupRow[] getDataByKey(LookupCall call) throws ProcessingException {
+    for (LookupRow r : cache.values()) {
+      if (r.getKey().equals(call.getKey())) {
+        return new LookupRow[]{r};
+      }
+    }
+    return null;
+  }
+
+  public LookupRow[] getDataByRec(LookupCall call) throws ProcessingException {
+    //TODO [rar] Auto-generated method stub
+    return null;
+  }
+
+  public LookupRow[] getDataByText(LookupCall call) throws ProcessingException {
+    //TODO [rar] Auto-generated method stub
+    return null;
+  }
+}
